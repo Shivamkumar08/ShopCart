@@ -1,0 +1,169 @@
+/* ProductList.css */
+
+/* Container */
+.main {
+  background-color: #fff4ee;
+}
+.ProductList {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+/* Filters */
+.FilterContainer {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scrollbar */
+  flex: 0 0 250px; /* Set fixed width for filters */
+  padding: 20px;
+  margin-right: 20px; /* Add margin between filters and content */
+}
+
+/* Adjusted Filters */
+.CategoryButtons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.CategoryButtons button {
+  background-color: #ec7992; /* Set button background color to blue */
+  color: white; /* Set text color to white */
+  border: none;
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 5px; /* Add some space between buttons */
+}
+
+.CategoryButtons button.active {
+  background-color: #0056b3; /* Darker blue for active state */
+}
+
+/* Product Grid */
+.ProductGridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+  flex: 0 0 40%;
+  margin-right: 1rem;
+}
+
+.product-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.product-rating {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-description {
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.add-to-cart-btn,
+.add-to-wishlist-btn {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover,
+.add-to-wishlist-btn:hover {
+  background-color: #0056b3;
+}
+
+.product-details-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination */
+.Pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Pagination button {
+  background-color: #ec7992;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.3s;
+}
+
+.Pagination button:hover {
+  background-color: #b72a48;
+}
+
+.Pagination button.active {
+  background-color: #b72a48;
+}
+
+/* ... (Remaining CSS code) ... */

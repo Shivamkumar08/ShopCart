@@ -1,0 +1,32 @@
+.header {
+  background-color: #ed8787 !important;
+  color: #00adb5 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem !important;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f1f0e8;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  transition: border 0.3s;
+}
+
+.nav-link.active {
+  background-color: #79155b;
+  color: yellow;
+  border-radius: 5px;
+}
